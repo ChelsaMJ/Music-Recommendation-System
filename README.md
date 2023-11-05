@@ -17,10 +17,13 @@ To get started with the Music Recommendation System, follow these steps:
 ### Installation
 
 1. Clone the GitHub repository:
+   
    $ git clone https://github.com/ChelsaMJ/music-recommendation-system.git
+   
    $ cd music-recommendation-system
 
-2. Install the required Python packages:
+3. Install the required Python packages:
+
    $ pip install -r requirements.txt
 
 
