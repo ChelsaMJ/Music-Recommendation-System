@@ -37,18 +37,18 @@ def recommend(song):
 
     return recommended_music_names,recommended_music_posters
 
-st.header('Music Recommender System')
+st.header('-[ Musica Reksis ]-\nThe Music Recommendation System')
 music = pickle.load(open('df.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 
 music_list = music['song'].values
-selected_movie = st.selectbox(
+selected_music = st.selectbox(
     "Type or select a song from the dropdown",
     music_list
 )
 
 if st.button('Show Recommendation'):
-    recommended_music_names,recommended_music_posters = recommend(selected_movie)
+    recommended_music_names,recommended_music_posters = recommend(selected_music)
     col1, col2, col3, col4, col5= st.columns(5)
     with col1:
         st.text(recommended_music_names[0])
